@@ -11,7 +11,17 @@ import "./Stoppable.sol";
 
 contract Historywall is Stoppable {
 
-    function Historywall() public {
+    event LogRecordedEvents(address writeSender, string messages, uint totalevents);
+
+    uint public totalEvents;
+
+    mapping (uint => uint) public blockshot;
+
+    function Historywall(string _historyevent) public {
+        totalEvents += 1;
+
+        emit LogRecordedEvents(msg.sender, _historyevent, totalEvents);
+        blockshot[totalEvents] = block.number;
 
     }
 }
