@@ -2,6 +2,9 @@ pragma solidity ^0.4.20;
 
 /**
  *Base for contracts that specify access rules to owners contract owners.
+ *
+ *license GNU General Public License 3.0, http:www.gnu.org/licenses/gpl-3.0.en.html
+ *@author Sangphil Kim, https://www.linkedin.com/in/sangphilkim/
  */
 
 contract Owned {
@@ -26,11 +29,11 @@ contract Owned {
 
         owner = _newOwner;
     }
-
+/*
     function deleteOwner(address _deleteOwner) public onlyOwner {
         emit LogDeleteOwner(_deleteOwner);
 
         owner = 0x0;
     }
-
+*/
 }
