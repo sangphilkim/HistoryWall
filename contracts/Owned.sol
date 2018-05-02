@@ -29,11 +29,11 @@ contract Owned {
 
         owner = _newOwner;
     }
-
+/*
     function deleteOwner(address _deleteOwner) public onlyOwner {
         emit LogDeleteOwner(_deleteOwner);
 
         owner = 0x0;
     }
-
+*/
 }
