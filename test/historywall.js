@@ -1,9 +1,9 @@
-var SimpleStorage = artifacts.require("./SimpleStorage.sol");
+var Histrywall = artifacts.require("./Historywall.sol");
 
-contract('SimpleStorage', function(accounts) {
+contract('Histrywall', function(accounts) {
 
   it("...should store the value 89.", function() {
-    return SimpleStorage.deployed().then(function(instance) {
+    return Histrywall.deployed().then(function(instance) {
       simpleStorageInstance = instance;
 
       return simpleStorageInstance.set(89, {from: accounts[0]});
