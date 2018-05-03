@@ -13,13 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/SangphilKim/HistoryWall.git"
   },
-  "author": "Sangphil Kim",
-  "license": "GPL-3.0",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SangphilKim/HistoryWall/issues"
   },
   "homepage": "https://github.com/SangphilKim/HistoryWall#readme",
-  "devDependencies": {
+  "dependencies": {
     "truffle": "^4.1.7"
   }
 }
