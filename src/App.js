@@ -43,11 +43,11 @@ class App extends Component {
      */
 
     const contract = require('truffle-contract')
-    const Historywall = contract(HistorywallContract)
+    const Historywall = contract(Historywall)
     Historywall.setProvider(this.state.web3.currentProvider)
 
     // Declaring this for later so we can chain functions on SimpleStorage.
-    var simpleStorageInstance
+    var HistorywallInstance
 
     // Get accounts.
     this.state.web3.eth.getAccounts((error, accounts) => {
